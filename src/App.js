@@ -4,38 +4,26 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-    <Person></Person>
-    <Person></Person>
-    <Person></Person>
-    <Friend></Friend>
-    <Friend></Friend>
-    <Friend></Friend>
-    <Friend></Friend>
+    <Person name="Rubel" nayika="Popi"></Person>
+    <Person name="BappaRaz" nayika="Chaka"></Person>
+    <Person name="shakib khan" nayika="shabnur"></Person>
+
     </div>
   );
 }
 
 
-function Person(){
+function Person(props){
+  console.log(props);
   return (
     <div className="person">
-    <h1>Name: Shakib AL Hasan</h1>
-    <h3>Profession: Cricket</h3>
+    <h1>Name: {props.name}</h1>
+    <h3>Nayika: {props.nayika}</h3>
     <h4>Country: Bangladesh</h4>
   </div>
   )
 }
 
-
-function Friend() {
-  return(
-    <div className="friend">
-      <h1>Name: Asif Akbor</h1>
-      <h3>Age: 23</h3>
-      <h4>Country: India</h4>
-    </div>
-  )
-}
 
 
 export default App;
