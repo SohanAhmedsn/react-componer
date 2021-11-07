@@ -28,6 +28,22 @@
   color: #61dafb;
 }
 
+.person {
+  background-color: #ff6905;
+  color: #800000;
+  border: 5px solid black;
+  border-radius: 20px;
+  margin: 20px;
+}
+.friend {
+  background-color: #81f3f3;
+  color: #1000f0;
+  border: 5px solid #ff0000;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -4,22 +4,38 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Person></Person>
+    <Person></Person>
+    <Person></Person>
+    <Friend></Friend>
+    <Friend></Friend>
+    <Friend></Friend>
+    <Friend></Friend>
     </div>
   );
 }
+
+
+function Person(){
+  return (
+    <div className="person">
+    <h1>Name: Shakib AL Hasan</h1>
+    <h3>Profession: Cricket</h3>
+    <h4>Country: Bangladesh</h4>
+  </div>
+  )
+}
+
+
+function Friend() {
+  return(
+    <div className="friend">
+      <h1>Name: Asif Akbor</h1>
+      <h3>Age: 23</h3>
+      <h4>Country: India</h4>
+    </div>
+  )
+}
+
 
 export default App;
